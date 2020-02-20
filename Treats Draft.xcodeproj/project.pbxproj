@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67B5BC1423FE6F8100DFE24D /* MissionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5BC1323FE6F8100DFE24D /* MissionsTableViewController.swift */; };
+		67B5BC1623FE6FD300DFE24D /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5BC1523FE6FD300DFE24D /* Mission.swift */; };
+		67B5BC1823FE75A300DFE24D /* MissionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5BC1723FE75A300DFE24D /* MissionTableViewCell.swift */; };
+		67B5BC1A23FE780D00DFE24D /* AchievementsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5BC1923FE780D00DFE24D /* AchievementsTableViewController.swift */; };
+		67B5BC1C23FE7B4000DFE24D /* AchievementsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5BC1B23FE7B4000DFE24D /* AchievementsTableViewCell.swift */; };
+		67B5BC1E23FE7DA200DFE24D /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5BC1D23FE7DA200DFE24D /* Achievement.swift */; };
 		983E4AE623F6BF7A00C8A855 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983E4AE523F6BF7A00C8A855 /* AppDelegate.swift */; };
 		983E4AE823F6BF7A00C8A855 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 983E4AE723F6BF7A00C8A855 /* art.scnassets */; };
 		983E4AEA23F6BF7A00C8A855 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983E4AE923F6BF7A00C8A855 /* ViewController.swift */; };
@@ -35,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67B5BC1323FE6F8100DFE24D /* MissionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsTableViewController.swift; sourceTree = "<group>"; };
+		67B5BC1523FE6FD300DFE24D /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		67B5BC1723FE75A300DFE24D /* MissionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionTableViewCell.swift; sourceTree = "<group>"; };
+		67B5BC1923FE780D00DFE24D /* AchievementsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsTableViewController.swift; sourceTree = "<group>"; };
+		67B5BC1B23FE7B4000DFE24D /* AchievementsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsTableViewCell.swift; sourceTree = "<group>"; };
+		67B5BC1D23FE7DA200DFE24D /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
 		983E4AE223F6BF7A00C8A855 /* Treats Draft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Treats Draft.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		983E4AE523F6BF7A00C8A855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		983E4AE723F6BF7A00C8A855 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -103,6 +115,12 @@
 				983E4AE723F6BF7A00C8A855 /* art.scnassets */,
 				983E4AE923F6BF7A00C8A855 /* ViewController.swift */,
 				983E4AEB23F6BF7A00C8A855 /* Main.storyboard */,
+				67B5BC1B23FE7B4000DFE24D /* AchievementsTableViewCell.swift */,
+				67B5BC1923FE780D00DFE24D /* AchievementsTableViewController.swift */,
+				67B5BC1D23FE7DA200DFE24D /* Achievement.swift */,
+				67B5BC1723FE75A300DFE24D /* MissionTableViewCell.swift */,
+				67B5BC1523FE6FD300DFE24D /* Mission.swift */,
+				67B5BC1323FE6F8100DFE24D /* MissionsTableViewController.swift */,
 				983E4AEE23F6BF7C00C8A855 /* Assets.xcassets */,
 				983E4AF023F6BF7C00C8A855 /* LaunchScreen.storyboard */,
 				983E4AF323F6BF7C00C8A855 /* Info.plist */,
@@ -260,7 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67B5BC1823FE75A300DFE24D /* MissionTableViewCell.swift in Sources */,
+				67B5BC1A23FE780D00DFE24D /* AchievementsTableViewController.swift in Sources */,
 				983E4AEA23F6BF7A00C8A855 /* ViewController.swift in Sources */,
+				67B5BC1423FE6F8100DFE24D /* MissionsTableViewController.swift in Sources */,
+				67B5BC1623FE6FD300DFE24D /* Mission.swift in Sources */,
+				67B5BC1E23FE7DA200DFE24D /* Achievement.swift in Sources */,
+				67B5BC1C23FE7B4000DFE24D /* AchievementsTableViewCell.swift in Sources */,
 				983E4AE623F6BF7A00C8A855 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,8 +459,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5T94ZJ9S68;
+				DEVELOPMENT_TEAM = ZGLKRGW3R5;
 				INFOPLIST_FILE = "Treats Draft/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,8 +478,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5T94ZJ9S68;
+				DEVELOPMENT_TEAM = ZGLKRGW3R5;
 				INFOPLIST_FILE = "Treats Draft/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
