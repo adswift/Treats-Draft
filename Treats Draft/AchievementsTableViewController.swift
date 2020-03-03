@@ -10,8 +10,10 @@ import UIKit
 
 class AchievementsTableViewController: UITableViewController {
     
+    var hoursInNature = 0
+    
     var achievements = [
-        Achievement(name: "Go out for 4 walks in one week", completed: false, medal: ""),
+        Achievement(name: "Spend 5 in nature", status: 0, medal: "")
     ]
     
     override func viewDidLoad() {
@@ -19,7 +21,7 @@ class AchievementsTableViewController: UITableViewController {
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
@@ -28,27 +30,31 @@ class AchievementsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return achievements.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "achievementcell", for: indexPath)
+        if let cell = cell as? AchievementsTableViewCell {
         let achievement = achievements[indexPath.row]
         cell.textLabel?.text = achievement.name
-        if achievement.completed == true {
-            cell.detailTextLabel?.text = "completed"
-        } else {
-            cell.detailTextLabel?.text = "not completed yet"
+            cell.statusSlider.value = Float(achievement.status)
+        if achievement.status == 5 {
+            cell.detailTextLabel?.text = "Completed!"
         }
+        
+    }
         return cell
     }
-    
+        override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -94,5 +100,6 @@ class AchievementsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 
 }

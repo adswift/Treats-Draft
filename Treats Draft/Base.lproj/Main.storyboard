@@ -76,11 +76,11 @@
             </objects>
             <point key="canvasLocation" x="-178" y="-1428"/>
         </scene>
-        <!--Item-->
+        <!--Missions-->
         <scene sceneID="GP9-sD-OIL">
             <objects>
                 <navigationController id="For-q2-bdD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="kTX-ZF-85a"/>
+                    <tabBarItem key="tabBarItem" title="Missions" id="kTX-ZF-85a"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="vjP-vy-CVv">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -140,6 +140,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="aLT-Rd-pNE">
+                                            <rect key="frame" x="73" y="6" width="250" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </slider>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wuZ-Ox-8vq">
                                             <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
@@ -156,6 +160,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="statusSlider" destination="aLT-Rd-pNE" id="naG-Xd-q7x"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -169,11 +176,11 @@
             </objects>
             <point key="canvasLocation" x="-178.2608695652174" y="-619.41964285714278"/>
         </scene>
-        <!--Item-->
+        <!--Achievements-->
         <scene sceneID="spr-aB-vwy">
             <objects>
                 <navigationController id="Y3h-ij-aAx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="bCB-en-ylw"/>
+                    <tabBarItem key="tabBarItem" title="Achievements" id="bCB-en-ylw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="fdy-br-cZT">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -212,14 +219,18 @@
                     <navigationItem key="navigationItem" title="Home" id="uwe-OT-MfF"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4n-j9-Ixn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="CmU-98-JPs">
+                    <rect key="frame" x="0.0" y="0.0" width="118" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </slider>
             </objects>
             <point key="canvasLocation" x="-178" y="-2245"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="xxf-ey-lGs">
             <objects>
                 <navigationController id="JTG-tB-OQT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Bom-ND-1nj"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="Bom-ND-1nj"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="A0x-6h-HI6">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>

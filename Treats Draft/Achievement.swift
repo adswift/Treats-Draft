@@ -10,6 +10,6 @@ import Foundation
 
 struct Achievement {
     var name : String
-    var completed : Bool
+    var status : Int
     var medal: String
 }

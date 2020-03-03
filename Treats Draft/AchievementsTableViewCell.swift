@@ -8,10 +8,8 @@
 
 import UIKit
 
-class AchievementsTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var completedLabel: UILabel!
-    
+class AchievementsTableViewCell: UITableViewCell {    
+    @IBOutlet weak var statusSlider: UISlider!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
