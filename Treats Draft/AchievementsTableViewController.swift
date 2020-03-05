@@ -10,10 +10,15 @@ import UIKit
 
 class AchievementsTableViewController: UITableViewController {
     
-    var hoursInNature = 0
-    
     var achievements = [
-        Achievement(name: "Spend 5 in nature", status: 0, medal: "")
+        Achievement(name: "Spend 5 hours in parks in total.", status: 5, maxStatus: 5),
+        Achievement(name: "Spend 10 hours in parks in total.", status: 5, maxStatus: 10),
+        Achievement(name: "Spend 15 hours in parks in total.", status: 5, maxStatus: 15),
+        Achievement(name: "Spend 20 hours in parks in total.", status: 5, maxStatus: 20),
+        Achievement(name: "Complete 5 missions in total.", status: 5, maxStatus: 5),
+        Achievement(name: "Complete 10 missions in total.", status: 5, maxStatus: 10),
+        Achievement(name: "Complete 15 missions in total.", status: 5, maxStatus: 15),
+        Achievement(name: "Complete 20 missions in total.", status: 5, maxStatus: 20),
     ]
     
     override func viewDidLoad() {
@@ -43,12 +48,20 @@ class AchievementsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "achievementcell", for: indexPath)
         if let cell = cell as? AchievementsTableViewCell {
         let achievement = achievements[indexPath.row]
-        cell.textLabel?.text = achievement.name
-            cell.statusSlider.value = Float(achievement.status)
-        if achievement.status == 5 {
-            cell.detailTextLabel?.text = "Completed!"
-        }
-        
+        cell.statusSlider.maximumValue = Float(achievement.maxStatus)
+        cell.statusSlider.value = Float(achievement.status)
+        cell.detailLabel.textAlignment = .center
+        cell.titleLabel.text = achievement.name
+            
+        if achievement.status == achievement.maxStatus {
+            cell.detailLabel?.text = "Completed!"
+            cell.medalIcon.image = UIImage(named: "goldmedal")
+            let missionMove = achievements.remove(at: indexPath.row)
+            achievements.append(missionMove)
+        } else {
+            cell.detailLabel?.text = "Not completed yet..."
+            }
+       
     }
         return cell
     }

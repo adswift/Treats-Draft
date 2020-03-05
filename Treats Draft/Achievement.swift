@@ -11,5 +11,6 @@ import Foundation
 struct Achievement {
     var name : String
     var status : Int
-    var medal: String
+    var maxStatus: Int 
 }
+
